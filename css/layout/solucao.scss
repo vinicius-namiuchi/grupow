@@ -1,14 +1,18 @@
 /** Solução **/
-.container {
-    h2 {
-        color: #000;
-        text-align: center;
-    }
-}
+.solucao p {
+    width: 30em;
+    border: solid 1px;
+  }
 
 .solucao img {
     position: relative;
+    float: right;
     margin: -200px 250px 0 0;
     width: 250px;
     height: 600px;
-  }
+    border: solid 1px;
+}
+
+.clear {
+    clear: both;
+}
