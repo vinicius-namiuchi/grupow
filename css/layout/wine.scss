@@ -1,0 +1,17 @@
+.wine button {
+    margin-top: 1em;
+    background-color: #7131f3;
+    background-image: linear-gradient(to left, #7131f3, #b38bff);
+    border: 0;
+    padding: 10px;
+    @include borda-arredondada;
+    font-weight: bold;
+    color: #FFF;
+    font-size: small;
+}
+
+#wine {
+    background-image: url(../imagens/wine.png);
+    width: 300px;
+    height: 300px;
+}

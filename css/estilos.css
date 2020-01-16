@@ -310,16 +310,66 @@ body {
   width: 940px;
   margin: 0 auto; }
 
+/** Corretora **/
+.corretora {
+  background-color: #7131f3;
+  background-image: linear-gradient(to right, #7131f3, #b38bff);
+  color: #FFF;
+  padding-top: 10em; }
+
+.corretora p {
+  width: 30em; }
+
+.corretora img {
+  position: relative;
+  float: right;
+  margin: -200px 250px 0 0;
+  width: 250px;
+  height: 600px; }
+
+.clear {
+  clear: both; }
+
+.corretora button {
+  margin-top: 1em;
+  background-color: #7131f3;
+  background-image: linear-gradient(to left, #7131f3, #b38bff);
+  border: 0;
+  padding: 10px;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  color: #FFF;
+  font-size: small; }
+
 /** Header **/
 header {
   background-color: #7131f3;
   background-image: linear-gradient(to right, #7131f3, #b38bff);
-  height: 400px;
   width: 100%;
   position: absolute;
   top: 0; }
   header .container {
     position: relative; }
+  header button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    color: #7131f3;
+    padding: 10px;
+    font-size: small; }
+  @media (max-width: 950px) {
+    header {
+      height: auto; }
+      header .container {
+        position: static; }
+      header h1 {
+        max-width: 50%;
+        margin: 0 auto; }
+        header h1 img {
+          max-width: 100%;
+          margin: .5em auto;
+          display: block; } }
 
 .menu-principal {
   position: absolute;
@@ -335,15 +385,8 @@ header {
   .menu-principal a {
     color: white;
     text-decoration: none; }
-  .menu-principal button {
-    background-color: #fff;
-    border: 0;
-    border-radius: 2px;
-    color: #6c29f2;
-    padding: 10px;
-    font-size: small; }
 
-/* Mostra o submenu no evento de mouse hover */
+/* Mostra o submenu */
 .menu-principal > .menu-list > li:hover > .sub-menu {
   display: block; }
 
@@ -353,7 +396,7 @@ header {
   top: 50px;
   left: 20px;
   background: #FFF;
-  color: #6c29f2;
+  color: #7131f3;
   width: 200px;
   height: 200px;
   z-index: 1000;
@@ -365,5 +408,42 @@ header {
 footer {
   background-color: #f8f8f8;
   width: 100%; }
+
+.wine button {
+  margin-top: 1em;
+  background-color: #7131f3;
+  background-image: linear-gradient(to left, #7131f3, #b38bff);
+  border: 0;
+  padding: 10px;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  color: #FFF;
+  font-size: small; }
+
+#wine {
+  background-image: url(../imagens/wine.png);
+  width: 300px;
+  height: 300px; }
+
+@media (max-width: 950px) {
+  .menu-principal {
+    position: static;
+    display: block;
+    text-align: center; }
+
+  .menu-principal li {
+    margin: .4em; }
+
+  .destaque {
+    font-size: 14px;
+    height: 250px; }
+
+  .menu-principal,
+  .menu-principal li,
+  .post-destaque,
+  .posts-antigos,
+  form {
+    width: auto; } }
 
 /*# sourceMappingURL=estilos.css.map */
