@@ -304,7 +304,10 @@ template {
   display: none; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9898a6; }
+  body h1 {
+    color: #232332; }
 
 .container {
   width: 940px;
@@ -316,6 +319,8 @@ body {
   background-image: linear-gradient(to right, #7131f3, #b38bff);
   color: #FFF;
   padding-top: 10em; }
+  .corretora h1 {
+    color: #FFF; }
 
 .corretora p {
   width: 30em; }
@@ -409,10 +414,22 @@ footer {
   background-color: #f8f8f8;
   width: 100%; }
 
+/** Wine **/
+.wine {
+  padding-top: 10em; }
+
+.wine p {
+  width: 22em; }
+
+.wine .container {
+  width: 300px;
+  position: relative;
+  left: -300px; }
+
 .wine button {
   margin-top: 1em;
   background-color: #7131f3;
-  background-image: linear-gradient(to left, #7131f3, #b38bff);
+  background-image: linear-gradient(to right, #7131f3, #b38bff);
   border: 0;
   padding: 10px;
   -webkit-border-radius: 0.3em;
@@ -421,10 +438,13 @@ footer {
   color: #FFF;
   font-size: small; }
 
-#wine {
-  background-image: url(../imagens/wine.png);
-  width: 300px;
-  height: 300px; }
+.wine img {
+  position: relative;
+  float: right;
+  margin: -310px 80px 0 0; }
+
+.clear {
+  clear: both; }
 
 @media (max-width: 950px) {
   .menu-principal {
