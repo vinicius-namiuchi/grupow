@@ -1,0 +1,64 @@
+/** Header **/
+header {
+  background-color: #7131f3;
+  background-image: linear-gradient(to right, #7131f3, #b38bff);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  .container {
+    position: relative;
+  }
+}
+
+.menu-principal {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 1.2em;
+  font-weight: lighter; 
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  li {
+    display: inline-block;
+    width: 5em;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    color: $cor-padrao;
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+/* Mostra o submenu no evento de mouse hover */
+.menu-principal > .menu-list > li:hover > .sub-menu {
+  display: block;
+}
+
+/* Configura o estilo do submenu */
+.menu-principal > .menu-list > li > .sub-menu {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #FFF;
+  color: $cor-padrao;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+  display: none;
+  border: 0;
+  border-radius: 2px;
+}
