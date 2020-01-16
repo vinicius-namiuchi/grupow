@@ -304,10 +304,7 @@ template {
   display: none; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #9898a6; }
-  body h1 {
-    color: #232332; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .container {
   width: 940px;
@@ -419,7 +416,8 @@ footer {
   padding-top: 10em; }
 
 .wine p {
-  width: 22em; }
+  width: 22em;
+  color: #9898a6; }
 
 .wine .container {
   width: 300px;
