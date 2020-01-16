@@ -1,18 +1,29 @@
 /** Solução **/
-.solucao p {
-    width: 30em;
-    border: solid 1px;
-  }
-
-.solucao img {
+.solucao .container {
+    width: 530px;
     position: relative;
-    float: right;
-    margin: -200px 250px 0 0;
-    width: 250px;
-    height: 600px;
-    border: solid 1px;
+    top: -500px;
+    right: -200px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h2 {
+    color: #232332;
+}
+
+.solucao p {
+    color: #9898a6;
 }
 
 .clear {
     clear: both;
+}
+
+.solucao img {
+    margin: 0 0 0 200px;
+    width: 400px;
+    height: 600px;
 }
