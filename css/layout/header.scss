@@ -75,7 +75,7 @@ header {
 .menu-principal ul li a {
   display: block;
   padding: 15px 20px;
-  color: #a9a9a9;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -91,6 +91,10 @@ header {
 
 .menu-principal ul ul li a:hover {
   color: #7131f3;
+}
+
+.menu-list ul li a{
+  color: #a9a9a9;
 }
 
 .sub-menu {
