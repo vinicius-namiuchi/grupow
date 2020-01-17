@@ -1,15 +1,6 @@
 /** Solução **/
-.solucao .container {
-    width: 530px;
-    position: relative;
-    top: -500px;
-    right: -200px;
-    border: solid 1px;
-}
-
-.titulo {
+.titulo{
     text-align: center;
-    border: solid 1px;
 }
 
 .titulo h2 {
@@ -28,5 +19,65 @@
     margin: 0 0 0 200px;
     width: 400px;
     height: 600px;
-    border: solid 1px;
+}
+
+.solucao #icon-responsivo {
+    width: 29px;
+    height: 31px;
+    border: solid 1px #dfd1fc;
+    background-color: #f2effd;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    left: -200px;
+}
+
+.solucao #icon-projetos { 
+    width: 45px;
+    height: 45px;
+    border: solid 1px #dfd1fc;
+    background-color: #6b28f2;
+    background: linear-gradient(to top, #6b28f2, #b086ff);
+    border-radius: 4px;
+    position: relative;
+    left: -200px;
+}
+
+.solucao #icon-seguranca { 
+    width: 29px;
+    height: 31px;
+    border: solid 1px #dfd1fc;
+    background-color: #f2effd;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    left: -200px;
+}
+
+.solucao #icon-software { 
+    width: 30px;
+    height: 22px;
+    border: solid 1px #dfd1fc;
+    background-color: #f2effd;
+    padding: 14px 10px 14px 10px;
+    border-radius: 4px;
+    position: relative;
+    left: -200px;
+}
+
+/* Flex Container */
+.solucao .container {
+    position: relative;
+    top: -500px;
+    right: -230px;
+	width: 600px;
+	display: flex;
+    flex-wrap: wrap;
+}
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+    font-size: 1.0em;
 }

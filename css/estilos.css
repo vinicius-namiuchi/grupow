@@ -374,38 +374,68 @@ header {
           margin: .5em auto;
           display: block; } }
 
-.menu-principal {
-  position: absolute;
-  right: 0;
-  top: -.5em;
-  font-size: 1.2em;
-  font-weight: lighter; }
-  .menu-principal ul {
-    padding-left: 0; }
-  .menu-principal li {
-    display: inline-block;
-    width: 5em; }
-  .menu-principal a {
-    color: white;
-    text-decoration: none; }
+/* Menu Principal */
+.menu-principal ul ul {
+  display: none; }
 
-/* Mostra o submenu */
-.menu-principal > .menu-list > li:hover > .sub-menu {
+.menu-principal ul li:hover > ul {
   display: block; }
 
-/* Configura o estilo do submenu */
-.menu-principal > .menu-list > li > .sub-menu {
+.menu-principal {
+  margin: 0 auto;
+  text-align: center; }
+
+.menu-principal ul {
+  background: #efefef;
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+  padding: 0 20px;
+  border-radius: 10px;
+  list-style: none;
+  position: relative;
+  display: inline-table; }
+
+.menu-principal ul:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.menu-principal ul li {
+  float: left; }
+
+.menu-principal ul li:hover a {
+  color: #a9a9a9; }
+
+.menu-principal ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #757575;
+  text-decoration: none; }
+
+.menu-principal ul ul {
+  background: #5f6975;
+  border-radius: 0px;
+  padding: 0;
   position: absolute;
-  top: 50px;
-  left: 20px;
-  background: #FFF;
-  color: #7131f3;
-  width: 200px;
-  height: 200px;
-  z-index: 1000;
-  display: none;
-  border: 0;
-  border-radius: 2px; }
+  top: 100%; }
+
+.menu-principal ul ul li {
+  float: none;
+  position: relative; }
+
+.menu-principal ul ul li a {
+  background-color: #FFF;
+  padding: 15px 20px; }
+
+.menu-principal ul ul li a:hover {
+  color: #7131f3; }
+
+.menu-principal ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0; }
 
 /** Footer **/
 footer {
@@ -449,16 +479,8 @@ footer {
   clear: both; }
 
 /** Solução **/
-.solucao .container {
-  width: 530px;
-  position: relative;
-  top: -500px;
-  right: -200px;
-  border: solid 1px; }
-
 .titulo {
-  text-align: center;
-  border: solid 1px; }
+  text-align: center; }
 
 .titulo h2 {
   color: #232332; }
@@ -472,8 +494,70 @@ footer {
 .solucao img {
   margin: 0 0 0 200px;
   width: 400px;
-  height: 600px;
-  border: solid 1px; }
+  height: 600px; }
+
+.solucao #icon-responsivo {
+  width: 29px;
+  height: 31px;
+  border: solid 1px #dfd1fc;
+  background-color: #f2effd;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  left: -200px; }
+
+.solucao #icon-projetos {
+  width: 45px;
+  height: 45px;
+  border: solid 1px #dfd1fc;
+  background-color: #6b28f2;
+  background: linear-gradient(to top, #6b28f2, #b086ff);
+  border-radius: 4px;
+  position: relative;
+  left: -200px; }
+
+.solucao #icon-seguranca {
+  width: 29px;
+  height: 31px;
+  border: solid 1px #dfd1fc;
+  background-color: #f2effd;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+  left: -200px; }
+
+.solucao #icon-software {
+  width: 30px;
+  height: 22px;
+  border: solid 1px #dfd1fc;
+  background-color: #f2effd;
+  padding: 14px 10px 14px 10px;
+  border-radius: 4px;
+  position: relative;
+  left: -200px; }
+
+/* Flex Container */
+.solucao .container {
+  position: relative;
+  top: -500px;
+  right: -230px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap; }
+
+/* Flex Item */
+.item {
+  flex: 1;
+  margin: 5px;
+  padding: 0 10px;
+  font-size: 1.0em; }
+
+/** Dúvida **/
+.titulo {
+  text-align: center; }
+
+.titulo h2 {
+  color: #232332; }
 
 @media (max-width: 950px) {
   .menu-principal {

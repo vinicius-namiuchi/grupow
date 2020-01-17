@@ -14,7 +14,7 @@ header {
     background-color: #fff;
     border: 0;
     border-radius: 2px;
-    color: $cor-padrao;
+    color: #7131f3;
     padding: 10px;
     font-size: small;
   }
@@ -39,44 +39,78 @@ header {
   } //fim Media Query
 } //fim Header
 
-.menu-principal {
-  position: absolute;
-  right: 0;
-  top: -.5em;
-  font-size: 1.2em;
-  font-weight: lighter; 
-  
-  ul {
-    padding-left: 0;
-  }
-  
-  li {
-    display: inline-block;
-    width: 5em;
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
+/* Menu Principal */
+.menu-principal ul ul {
+  display: none;
 }
 
-/* Mostra o submenu */
-.menu-principal > .menu-list > li:hover > .sub-menu {
+.menu-principal ul li:hover > ul {
   display: block;
 }
 
-/* Configura o estilo do submenu */
-.menu-principal > .menu-list > li > .sub-menu {
+.menu-principal {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-principal ul {
+  background: #efefef; 
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+  padding: 0 20px;
+  border-radius: 10px;  
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+.menu-principal ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.menu-principal ul li {
+  float: left;
+}
+
+.menu-principal ul li:hover a {
+  color: #a9a9a9;
+}
+  
+.menu-principal ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #757575;
+  text-decoration: none;
+}
+
+.menu-principal ul ul {
+  background: #5f6975;
+  border-radius: 0px;
+  padding: 0;
   position: absolute;
-  top: 50px;
-  left: 20px;
-  background: #FFF;
-  color: $cor-padrao;
-  width: 200px;
-  height: 200px;
-  z-index: 1000;
-  display: none;
-  border: 0;
-  border-radius: 2px;
+  top: 100%;
+}
+
+.menu-principal ul ul li {
+  float: none; 
+  position: relative;
+}
+
+.menu-principal ul ul li a {
+  background-color: #FFF;
+  padding: 15px 20px;
+}	
+
+.menu-principal ul ul li a:hover {
+  color: #7131f3;
+}
+
+.menu-principal ul ul ul {
+  position: absolute;
+  left: 100%;
+  top:0;
 }
