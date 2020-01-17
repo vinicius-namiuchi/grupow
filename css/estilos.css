@@ -453,10 +453,12 @@ footer {
   width: 530px;
   position: relative;
   top: -500px;
-  right: -200px; }
+  right: -200px;
+  border: solid 1px; }
 
 .titulo {
-  text-align: center; }
+  text-align: center;
+  border: solid 1px; }
 
 .titulo h2 {
   color: #232332; }
@@ -470,7 +472,8 @@ footer {
 .solucao img {
   margin: 0 0 0 200px;
   width: 400px;
-  height: 600px; }
+  height: 600px;
+  border: solid 1px; }
 
 @media (max-width: 950px) {
   .menu-principal {
