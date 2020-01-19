@@ -1,23 +1,19 @@
 /** Solução **/
-.titulo{
+.solucao .titulo{
     text-align: center;
+
+    h2 {
+        color: #232332;
+    }
+
+    p {
+        margin: 0 210px 0 210px;
+    }
 }
 
-.titulo h2 {
-    color: #232332;
-}
-
-.solucao p {
-    color: #9898a6;
-}
-
-.clear {
-    clear: both;
-}
-
-.solucao img {
-    margin: 0 0 0 200px;
-    width: 400px;
+#telefone2 {
+    float: left;
+    width: 220px;
     height: 600px;
 }
 
@@ -28,8 +24,6 @@
     background-color: #f2effd;
     padding: 10px;
     border-radius: 4px;
-    position: relative;
-    left: -200px;
 }
 
 .solucao #icon-projetos { 
@@ -39,8 +33,6 @@
     background-color: #6b28f2;
     background: linear-gradient(to top, #6b28f2, #b086ff);
     border-radius: 4px;
-    position: relative;
-    left: -200px;
 }
 
 .solucao #icon-seguranca { 
@@ -50,8 +42,6 @@
     background-color: #f2effd;
     padding: 10px;
     border-radius: 4px;
-    position: relative;
-    left: -200px;
 }
 
 .solucao #icon-software { 
@@ -61,23 +51,20 @@
     background-color: #f2effd;
     padding: 14px 10px 14px 10px;
     border-radius: 4px;
-    position: relative;
-    left: -200px;
 }
 
-/* Flex Container */
-.solucao .container {
-    position: relative;
-    top: -500px;
-    right: -230px;
-	width: 600px;
-	display: flex;
+.solucao .flex-container {
+    display: flex;
     flex-wrap: wrap;
+    position: relative;
+    left: 200px;
+    margin: 100px;
 }
-/* Flex Item */
-.item {
-	flex: 1;
-	margin: 5px;
-	padding: 0 10px;
-    font-size: 1.0em;
+  
+.solucao .flex-container > div {
+    width: 260px;
+}
+
+.clear {
+    clear: both;
 }

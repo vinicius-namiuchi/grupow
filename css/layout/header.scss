@@ -4,11 +4,6 @@ header {
   background-image: linear-gradient(to right, #7131f3, #b38bff);
   width: 100%;
   position: absolute;
-  top: 0;
-
-  .container {
-    position: relative;
-  }
 
   button{
     background-color: #fff;
@@ -18,26 +13,7 @@ header {
     padding: 10px;
     font-size: small;
   }
-
-  @media #{$mq-mobile}{
-    height: auto;
-
-    .container {
-      position: static;
-    }
-
-    h1 {
-      max-width: 50%;
-      margin: 0 auto;
-
-      img {
-        max-width: 100%;
-        margin: .5em auto;
-        display: block;
-      }
-    } //fim H1
-  } //fim Media Query
-} //fim Header
+}
 
 /* Menu Principal */
 .menu-principal ul ul {
@@ -51,14 +27,15 @@ header {
 
 .menu-principal {
   margin: 0 auto;
-  text-align: center;
+  position: absolute;
+  right: 400px;
 }
 
 .menu-principal ul {
   list-style: none;
   position: relative;
   display: inline-table;
-  top: -90px;
+  top: -110px;
   left: 200px;
 }
 

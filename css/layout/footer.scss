@@ -2,8 +2,32 @@
 footer {
     background-color: #f8f8f8;
     border-top: 2px solid #eee;
+
+    p {
+        color: #a9a9a9;
+    }
 }
 
-footer .container {
+footer .flex-container {
     padding-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+  
+footer .flex-container > div {
+    width: 100%;
+    padding-left: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: -20px;
+    padding: 0;
+}
+
+footer ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #a9a9a9;
+    text-decoration: none;
 }

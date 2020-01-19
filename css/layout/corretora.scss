@@ -3,37 +3,31 @@
   background-color: #7131f3;
   background-image: linear-gradient(to right, #7131f3, #b38bff);
   color: #FFF;
-  padding-top: 10em;
+  padding-top: 100px;
 
-  h1{
+  p {
+    color: #fff;
+  }
+
+  button {
+    margin-top: 1em;
+    background-color: #7131f3;
+    background-image: linear-gradient(to left, #7131f3, #b38bff);
+    border: 0;
+    padding: 10px;
+    @include borda-arredondada;
+    font-weight: bold;
     color: #FFF;
+    font-size: small;
   }
 }
-  
-.corretora p {
-  width: 30em;
-}
 
-.corretora img {
-  position: relative;
+#telefone1 {
   float: right;
-  margin: -200px 250px 0 0;
-  width: 250px;
+  width: 220px;
   height: 600px;
 }
 
 .clear {
   clear: both;
-}
-
-.corretora button {
-  margin-top: 1em;
-  background-color: #7131f3;
-  background-image: linear-gradient(to left, #7131f3, #b38bff);
-  border: 0;
-  padding: 10px;
-  @include borda-arredondada;
-  font-weight: bold;
-  color: #FFF;
-  font-size: small;
 }
