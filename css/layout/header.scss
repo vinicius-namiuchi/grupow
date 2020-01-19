@@ -93,11 +93,19 @@ header {
   color: #7131f3;
 }
 
-.menu-list ul li a{
+.menu-principal .menu-list ul li a{
   color: #a9a9a9;
 }
 
-.sub-menu {
+.menu-principal .sub-menu {
   background-color: #fff;
   padding: 10px;
+}
+
+.menu-principal a:hover {
+  border-top: 3px solid #fff;
+}
+
+.menu-principal a {
+  border-top: 3px solid transparent;
 }

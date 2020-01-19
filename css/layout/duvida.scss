@@ -1,8 +1,52 @@
 /** Dúvida **/
-.titulo{
+.duvida .titulo {
     text-align: center;
+
+    h2 {
+        color: #232332;
+    }
+
+    p {
+        margin: 0 210px 0 210px;
+    }
 }
 
-.titulo h2 {
-    color: #232332;
+#telefone3 {
+    float: right;
+    width: 500px;
+    height: 600px;
+}
+
+/* Menu */
+.menu {
+    float: left;
+    color: #9898a6;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.menu ul ul {
+    display: none;
+}
+  
+.menu ul li:hover > ul {
+    display: block;
+    padding: 20px 20px 20px 35px;
+}
+  
+.menu ul {
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+.duvida .menu-list li:hover {
+    background-color: #7131f3;
+    background-image: linear-gradient(to right, #7131f3, #b38bff);
+    color: #fff;
+}
+
+.clear {
+    clear: both;
 }

@@ -1,5 +1,9 @@
 /** Footer **/
-footer{
+footer {
     background-color: #f8f8f8;
-    width: 100%;
+    border-top: 2px solid #eee;
+}
+
+footer .container {
+    padding-top: 100px;
 }
